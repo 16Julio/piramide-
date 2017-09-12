@@ -1,0 +1,26 @@
+using System;
+
+namespace nuevo_programa
+{
+    class nuevo_programa
+    {
+        static void Main(string[] args)
+       
+            Console.write("programadores: Samuel rosete, Julio Tolentino");
+            Console.Write("Altura de la piramide: ");
+            int niveles;
+
+            int.TryParse( Console.ReadLine(), out niveles);
+
+             dibujarPiramide(niveles);
+
+        }
+        static void dibujarPiramide(int niveles){
+            //Aquí va todo
+            for(int i = 1 ; i <= niveles; i++){
+                System.Console.WriteLine(new string('#', i).PadLeft(niveles));
+            }
+            
+        }
+    }
+}
